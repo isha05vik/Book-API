@@ -1,0 +1,23 @@
+### Get all books
+GET http://localhost:5000/books
+
+### Add a book
+POST http://localhost:5000/books
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert C. Martin",
+  "publishedYear": 2008
+}
+
+### Update a book
+PUT http://localhost:5000/books/68551b6303ccea7d3d1b49b3
+Content-Type: application/json
+
+{
+  "title": "Clean Code - Updated"
+}
+
+### Delete a book
+DELETE http://localhost:5000/books/68551b6303ccea7d3d1b49b3
